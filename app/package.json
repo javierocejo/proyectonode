@@ -1,0 +1,22 @@
+{
+  "name": "proyectonode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/javierocejo/proyectonode.git"
+  },
+  "author": "Javier Ocejo",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/javierocejo/proyectonode/issues"
+  },
+  "homepage": "https://github.com/javierocejo/proyectonode#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
