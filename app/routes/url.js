@@ -12,13 +12,12 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
 
-//todo : set urlToOpen to the one in the request
-urlToOpen = req.body;
+urlToOpen = req.body.url;
 console.log(urlToOpen);
 //open(urlToOpen);
   //console.log(req.body);
-  res.send(req.body);
-  //res.json({ result: true });
+  
+ res.json({ result: true });
 });
 
 
