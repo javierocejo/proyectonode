@@ -4,7 +4,10 @@ var urlToOpen = null;
 
 function open(urlToOpen) {
 	var exec = require('child_process').exec;
-  var cmd = 'google-chrome --kiosk '+urlToOpen;
+  var cmd = 'open '+urlToOpen;
+  //if the os is not MAC change for google-chrome kiosk --->todo
+  console.log(cmd);
+
 
   exec(cmd, function(error, stdout, stderr) {
     if (error) {
@@ -22,10 +25,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(req, res, next) {
 
 urlToOpen = req.body.url;
-console.log(urlToOpen);
-//open(urlToOpen);
-  //console.log(req.body);
-
+open(urlToOpen);
  res.json({ result: true });
 });
 
