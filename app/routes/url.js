@@ -5,6 +5,19 @@ var urlToOpen = null;
 function open(urlToOpen) {
 	var exec = require('child_process').exec;
   var cmd = 'chromium-browser '+urlToOpen;
+
+  /*TODO how do I get this string combined to comand?
+  (its the bash script to kill and start chrome if already running)
+
+  if ps ax | grep -v grep | grep chromium-browser > /dev/null
+then
+    pkill chromium-browser && chromium-browser
+else
+    chromium-browser
+fi
+ */
+
+
   console.log(cmd);
 
 
