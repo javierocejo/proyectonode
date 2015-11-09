@@ -4,8 +4,7 @@ var urlToOpen = null;
 
 function open(urlToOpen) {
 	var exec = require('child_process').exec;
-  var cmd = 'open '+urlToOpen;
-  //if the os is not MAC change for google-chrome kiosk --->todo
+  var cmd = 'chromium-browser '+urlToOpen;
   console.log(cmd);
 
 
@@ -32,5 +31,3 @@ open(urlToOpen);
 
 
 module.exports = router;
-
-
