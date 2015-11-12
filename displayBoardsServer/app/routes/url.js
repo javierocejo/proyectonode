@@ -4,7 +4,7 @@ var urlToOpen = null;
 
 function open(urlToOpen) {
 	var exec = require('child_process').exec;
-  var cmd = 'chromium-browser '+urlToOpen;
+  var cmd = 'chromium-browser --kiosk'+urlToOpen;
 
   /*TODO how do I get this string combined to comand?
   (its the bash script to kill and start chrome if already running)
